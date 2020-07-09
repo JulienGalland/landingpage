@@ -7,11 +7,15 @@ body {
 }
 
 #banner {
-	background-image: url("images/colissimo.jpg" );
-	margin: 10px;
+
+	background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(246,246,246,0.8323704481792717) 8%, rgba(243,247,247,0) 100%), url("images/colissimo.jpg");
 	height: 379px;
-	padding: 0px;
-	border-bottom: 2px solid black;
+	padding-left: 10px;
+	background-position : center;
+}
+
+.logolaposte {
+	width: 150px
 }
 
 .container_avantages {
@@ -48,22 +52,18 @@ body {
 
 .container_stepper {
 	margin: 10px auto;
-	width: 100%;
-}
-.stepper {
-	display: flex;
-   	align-items: center;
-   	}
-
-.steps {
-	width: 100%
-	margin: 10px auto;
 	text-align: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 10px;
- }
+	margin-right: : 10px
+	padding: 10px auto;
 
+}
+
+.stepper {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+	justify-content: space-around;
+   	}
 
 .step {
 	background-color: #fff;
@@ -84,6 +84,10 @@ body {
  .fleche {
  	width: 35px;
  	height: 35px;
+ 	padding: 20px;
+ 	border-radius: 50%;
+ 	border: 1px solid #d1d1cd;
+ 	background-color: #fff;
  }
 
 .button {
@@ -100,29 +104,37 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Montserrat', 'sans-serif';
-	color: #EB6A20;
 }
+
+
 h1 {
+	color: #EB6A20;
 	font-size: 30px;
 	font-weight: 500;
 	margin: 20px;
 }
 
 h2 {
-	font-size: 22px;
+	color: #EB6A20;
+	font-size: 20px;
 	font-weight: 200;
 }
 
 h3 {
 	font-size: 18px;
-	font-weight: 100;
+	font-weight: 00;
+	margin: 20px;
 }
+
+p {
+	font-size: 16px;
+	margin: 20px;
+}	
 
 a {
   	text-decoration: none;
   	color: #fff;
 }
-
 a:hover {
 	text-decoration: underline;
  	color: #fff;
@@ -132,14 +144,16 @@ a:hover {
 	text-align: center;
 	height: 100px;
 	color: #353534;
-
+	margin: 10px auto;
+	padding: 20px auto;
 }
 
-p {
-	margin: 0px auto;
+.footerlinks {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+
 }
-
-
 
 @media (max-width: 800px) {
 
@@ -148,10 +162,13 @@ p {
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
 	}
-.steps {
+.stepper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	grid-gap: 10px;
+}
+.logolaposte {
+	width: 100px
 }
 }
 
@@ -162,11 +179,15 @@ p {
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
 	}
-.steps {
+.stepper {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 10px;
-}
+	}
  .fleche {
  	display: none;
- }
+ 	}
+.logolaposte {
+	width: 80px
+	}
+}
