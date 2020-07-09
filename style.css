@@ -1,0 +1,172 @@
+body {
+	font-family: 'Roboto', 'sans-serif';
+	color: #3C3C3C;
+	font-size: 16px;
+	background-color: #F7F7F7;
+	margin: 0px;
+}
+
+#banner {
+	background-image: url("images/colissimo.jpg" );
+	margin: 10px;
+	height: 379px;
+	padding: 0px;
+	border-bottom: 2px solid black;
+}
+
+.container_avantages {
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.avantages {
+	margin: 10px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+ }
+
+.avantage {
+	background-color: #ec6a1f;
+	color: #fff;
+	width: 90%;
+	border: 1px solid #d1d1cd;
+	box-shadow: 10px 5px 5px #d1d1cd;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.pictos_avantages {
+ 	width: 35px;
+ 	height: 35px;
+ 	padding: 10px;
+ 	border-radius: 50%;
+ 	background-color: #fff;
+ }
+
+.container_stepper {
+	margin: 10px auto;
+	width: 100%;
+}
+.stepper {
+	display: flex;
+   	align-items: center;
+   	}
+
+.steps {
+	width: 100%
+	margin: 10px auto;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 10px;
+ }
+
+
+.step {
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	border: 1px solid #d1d1cd;
+	border-radius: 50%;
+	box-shadow: 10px 5px 5px #d1d1cd;
+	margin: 20px auto;
+	padding: 10px
+}
+
+.pictos_stepper {
+ 	width: 70px; 
+ 	margin: 30px
+ }
+
+ .fleche {
+ 	width: 35px;
+ 	height: 35px;
+ }
+
+.button {
+	background-color: #ec6a1f;
+	width: 300px;
+	border: 1px solid #d1d1cd;
+	border-radius: 5px;
+	box-shadow: 10px 5px 5px #d1d1cd;
+	margin: 40px auto;
+	padding: 20px;
+	text-align: center;	
+	font-size: 22px
+}
+
+h1, h2, h3 {
+	font-family: 'Montserrat', 'sans-serif';
+	color: #EB6A20;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 500;
+	margin: 20px;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 100;
+}
+
+a {
+  	text-decoration: none;
+  	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+ 	color: #fff;
+}
+.footer {
+	background-color: #353534;
+	text-align: center;
+	height: 100px;
+	color: #353534;
+
+}
+
+p {
+	margin: 0px auto;
+}
+
+
+
+@media (max-width: 800px) {
+
+.avantages {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	}
+.steps {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+}
+
+@media (max-width: 600px) {
+
+.avantages {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+	}
+.steps {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+ .fleche {
+ 	display: none;
+ }
