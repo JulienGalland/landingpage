@@ -41,6 +41,9 @@ body {
 	padding: 10px;
 	text-align: center;
 }
+.avantage:hover {
+	 background-color: #e95701
+}
 
 .pictos_avantages {
  	width: 35px;
@@ -62,7 +65,7 @@ body {
 	display: grid;
 	align-items: center;
 	grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
-	justify-content: space-around;
+	
    	}
 
 .step {
@@ -87,7 +90,9 @@ body {
  	padding: 20px;
  	border-radius: 50%;
  	border: 1px solid #d1d1cd;
- 	background-color: #fff;
+ 	background-color: #e95701;
+ 	margin-left: auto;
+  	margin-right: auto;
  }
 
 .button {
@@ -102,10 +107,13 @@ body {
 	font-size: 22px
 }
 
+.button:hover {
+	 background-color: #e95701
+	 }
+
 h1, h2, h3 {
 	font-family: 'Montserrat', 'sans-serif';
 }
-
 
 h1 {
 	color: #EB6A20;
@@ -132,6 +140,7 @@ p {
 }	
 
 a {
+  	margin: 10px;
   	text-decoration: none;
   	color: #fff;
 }
@@ -139,12 +148,18 @@ a:hover {
 	text-decoration: underline;
  	color: #fff;
 }
+
+typeform-share:hover {
+	text-decoration: underline;
+ 	color: #fff;
+
+
+}
 .footer {
 	background-color: #353534;
 	text-align: center;
 	height: 100px;
 	color: #353534;
-	margin: 10px auto;
 	padding: 20px auto;
 }
 
