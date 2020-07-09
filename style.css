@@ -93,6 +93,16 @@ body {
  	background-color: #e95701;
  	margin-left: auto;
   	margin-right: auto;
+}
+  .fleche_bas {
+ 	width: 35px;
+ 	height: 35px;
+ 	padding: 20px;
+ 	border-radius: 50%;
+ 	border: 1px solid #d1d1cd;
+ 	background-color: #e95701;
+ 	margin-left: auto;
+  	margin-right: auto;
  }
 
 .button {
@@ -119,18 +129,18 @@ h1 {
 	color: #EB6A20;
 	font-size: 30px;
 	font-weight: 500;
-	margin: 20px;
+	margin: 30px;
 }
 
 h2 {
 	color: #EB6A20;
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: 200;
 }
 
 h3 {
 	font-size: 18px;
-	font-weight: 00;
+	font-weight: 700;
 	margin: 20px;
 }
 
@@ -206,3 +216,8 @@ typeform-share:hover {
 	width: 80px
 	}
 }
+
+@media (min-width: 600px) {
+  .fleche_bas {
+ 	display: none;}
+ 	}
